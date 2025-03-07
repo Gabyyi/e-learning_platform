@@ -1,6 +1,6 @@
 # PedaONLINE - e-learning platform
 
-Credit to [lvanaaa](https://github.com/lvanaaa) for the design of the app
+Credit to [lvanaaa](https://github.com/lvanaaa) for the design and structure of the app
 
 The platform features student and teacher accounts.
 ### Student Account
