@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        body{ background-image: url("/images/bg-texture.png")}
+    </style>
+</head>
+<body>
+    <section class="sign-in">
+        <article class="sign-in_details">
+            <h1>Sign Up</h1>
+            <p>Fill the form below to create your account</p>
+            <form class="sign-in_form" action="php/signup.php" method="POST">
+                <div class="form_control">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+                </div>
+                <div class="form_control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form_control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <div class="form_control">
+                    <label for="cpassword"> Confirm Password</label>
+                    <input type="password" id="cpassword" name="cpassword" placeholder="Confirm your password">
+                </div>
+
+                <div class="form_control">
+                    <label for="subscription">Subscription</label>
+                    <select name="subscription" id="role">
+                        <option value="Freeby">Free 0.00$</option>
+                        <option value="GoodieBox">GoodieBox 0.99$</option>
+                        <option value="Perky">Perky 2.99$</option>
+                        <option value="All Accessby">All Accessby 9.99$</option>
+                    </select>
+            
+                <button class="btn primary" type="submit">Sign up</button>
+            </form>
+            <small class="next_page">Already have an account?<a href="php/login.php"> Sign in</a></small>
+            <small class="next_page">Are you a teacher?<a href="php/teacher_applicationform.php"> Apply now!</a></small>
+        </article>
+        <article class="sign-in_logo">
+            <div>
+                <img src="images/header.svg">
+            </div>
+        </article>
+    </section>
+</body>
+</html>
